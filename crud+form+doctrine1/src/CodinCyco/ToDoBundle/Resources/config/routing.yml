@@ -1,0 +1,38 @@
+codin_cyco_to_do_homepage:
+    path:     /welcome
+    defaults: { _controller: CodinCycoToDoBundle:Default:index }
+create:
+    path: /todo/add
+    defaults: { _controller: CodinCycoToDoBundle:ToDo:create }
+get:
+    path: /todo/get/{id}
+    defaults: { _controller: CodinCycoToDoBundle:ToDo:get }
+delete:
+    path: /todo/delete/{id}
+    defaults: { _controller: CodinCycoToDoBundle:ToDo:delete }
+edit:
+    path: /todo/edit/{id}
+    defaults: { _controller: CodinCycoToDoBundle:ToDo:edit }
+
+
+
+
+index:
+    path:     /index
+    defaults: { _controller: CodinCycoToDoBundle:globe:index }
+
+add:
+    path:     /add
+    defaults: { _controller: CodinCycoToDoBundle:globe:add }
+
+delete:
+    path:     /delete
+    defaults: { _controller: CodinCycoToDoBundle:globe:delete }
+
+update:
+    path:     /update
+    defaults: { _controller: CodinCycoToDoBundle:globe:update }
+
+details:
+    path:     /details
+    defaults: { _controller: CodinCycoToDoBundle:globe:details }

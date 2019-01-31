@@ -1,0 +1,9 @@
+tek_up_gestion_livres_homepage:
+    path:     /
+    defaults: { _controller: TekUpGestionLivresBundle:Default:index }
+recherche_categorie:
+    path: /{id}
+    defaults: {_controller: TekUpGestionLivresBundle:Categorie:recherche }
+get_all:
+    path: /cats/all
+    defaults: {_controller: TekUpGestionLivresBundle:Categorie:getAll }

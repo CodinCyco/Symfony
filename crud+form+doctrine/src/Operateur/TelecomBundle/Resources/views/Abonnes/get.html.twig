@@ -1,0 +1,26 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}OperateurTelecomBundle:Abonnes:get{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Abonnes:get page</h1>
+
+    <hr>
+    <ul class="list-group">
+        <li class="list-group-item">
+            {{ abonne.id }}
+        </li>
+        <li class="list-group-item">
+            {{ abonne.cin }}
+        </li>
+        <li class="list-group-item">
+            {{ abonne.nom }}
+        </li>
+        <li class="list-group-item">
+            {{ abonne.prenom }}
+        </li>
+        <li class="list-group-item">
+            {{ abonne.dateNaissance|date }}
+        </li>
+    </ul>
+{% endblock %}

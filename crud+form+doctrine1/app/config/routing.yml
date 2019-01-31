@@ -1,0 +1,7 @@
+codin_cyco_to_do:
+    resource: "@CodinCycoToDoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

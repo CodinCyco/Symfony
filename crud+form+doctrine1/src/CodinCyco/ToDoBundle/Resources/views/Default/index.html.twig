@@ -1,0 +1,44 @@
+{% extends'::base.html.twig' %}
+
+{% block title %}ToDo{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block body %}
+    <h2>All ToDo's</h2>
+<div class="table-responsive">
+    <table class="table table-dark table-hover">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">ToDo</th>
+            <th scope="col">Due Date</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for todo in todos %}
+            <tr>
+                <th scope="row">{{ todo.id }}</th>
+                <td>{{ todo.name }}</td>
+                <td>{{ todo.dueDate|date }}</td>
+                <td>
+                    <a href="{{ path('get',{'id':todo.id}) }}" class="btn btn-info">Details</a>
+                    <a href="{{ path('edit',{'id':todo.id}) }}" class="btn btn-warning">Edit</a>
+                    <a href="{{ path('delete',{'id':todo.id}) }}" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        {% endfor %}
+
+
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+{% block javascripts %}
+    <script>
+        $('document').ready(function(){
+            $('.nav-item').removeClass('active');
+            $('.home').addClass('active');
+
+        });
+    </script>
+{% endblock %}

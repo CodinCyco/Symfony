@@ -1,0 +1,34 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}OperateurTelecomBundle:Abonnes:getAll{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Abonnes:getAll page</h1>
+    <hr>
+    <div class="table-responsive">
+        <table class="table table-dark table-hover">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Cin</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Actions</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            {% for abonne in abonnes %}
+                <tr>
+                    <th scope="row">{{ abonne.id }}</th>
+                    <td>{{ abonne.cin }}</td>
+                    <td>{{ abonne.nom }}</td>
+                    <td><a class="btn btn-info" href="{{ path('get',{'id':abonne.id}) }}">Plus d'info ...</a></td>
+
+                </tr>
+            {% endfor %}
+
+
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,4 @@
+services:
+#    tek_up_gestion_livres.example:
+#        class: TekUp\GestionLivresBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

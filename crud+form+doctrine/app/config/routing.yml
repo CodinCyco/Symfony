@@ -1,0 +1,7 @@
+operateur_telecom:
+    resource: "@OperateurTelecomBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

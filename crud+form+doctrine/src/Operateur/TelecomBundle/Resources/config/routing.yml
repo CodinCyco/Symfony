@@ -1,0 +1,26 @@
+operateur_telecom_homepage:
+    path:     /
+    defaults: { _controller: OperateurTelecomBundle:Default:index }
+
+get_all:
+    path:     /getAll
+    defaults: { _controller: OperateurTelecomBundle:Abonnes:getAll }
+
+get:
+    path:     /get{id}
+    defaults: { _controller: OperateurTelecomBundle:Abonnes:get }
+
+
+
+add:
+    path:     /add
+    defaults: { _controller: OperateurTelecomBundle:Abonnes:add }
+
+add_sim:
+    path:     /addSim
+    defaults: { _controller: OperateurTelecomBundle:SIM:addSim }
+
+all_sim:
+    path:    /allSim
+    defaults: { _controller: OperateurTelecomBundle:SIM:getAll }
+

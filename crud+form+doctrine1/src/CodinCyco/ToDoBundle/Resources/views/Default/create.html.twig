@@ -1,0 +1,20 @@
+{% extends'::base.html.twig' %}
+
+{% block title %}Create toDo{% endblock %}
+{% block stylesheets %}{% endblock %}
+{% block body %}
+<h2 class="page-header">Create ToDo</h2>
+    {{ form_start(Form) }}
+    {{ form_widget(Form) }}
+    {{ form_end(Form) }}
+
+{% endblock %}
+{% block javascripts %}
+    <script>
+        $('document').ready(function(){
+            $('.nav-item').removeClass('active');
+            $('.add').addClass('active');
+
+        });
+    </script>
+{% endblock %}

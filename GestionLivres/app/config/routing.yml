@@ -1,0 +1,7 @@
+tek_up_gestion_livres:
+    resource: "@TekUpGestionLivresBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

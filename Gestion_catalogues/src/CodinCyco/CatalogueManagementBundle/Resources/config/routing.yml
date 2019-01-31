@@ -1,0 +1,9 @@
+codin_cyco_catalogue_management_homepage:
+    path:     /
+    defaults: { _controller: CodinCycoCatalogueManagementBundle:Default:index }
+get_all:
+    path: catalogues/all
+    defaults: { _controller: CodinCycoCatalogueManagementBundle:Default:getAll }
+add_catalogue:
+    path: catalogues/add
+    defaults: { _controller: CodinCycoCatalogueManagementBundle:Default:add }
